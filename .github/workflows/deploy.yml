@@ -35,7 +35,7 @@ jobs:
       - name: Type check
         run: npx tsc --noEmit
 
-      # base_path 를 내보내 준다. 사용자 사이트면 "", 프로젝트 사이트면 "/repo-name"
+      # base_path 를 내보내 준다.
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -45,7 +45,7 @@ jobs:
         env:
           VITE_BASE: ${{ steps.pages.outputs.base_path }}/
 
-      # SPA 라우터를 나중에 붙일 때를 위한 폴백 (지금은 있어도 무해)
+      # SPA 라우터를 나중에 붙일 때를 위한 폴백
       - name: SPA fallback
         run: cp dist/index.html dist/404.html
 
