@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "日本語",
+    "short": "JA"
+  },
+  "nav": {
+    "work": "ワーク",
+    "about": "プロフィール",
+    "contact": "コンタクト",
+    "menu": "メニュー",
+    "close": "閉じる",
+    "language": "言語を選択"
+  },
+  "loader": {
+    "greeting": "こんにちは",
+    "status": "ポートフォリオを読み込み中"
+  },
+  "hero": {
+    "eyebrow": "ポートフォリオ · 2026",
+    "titleLine1": "アイデアを",
+    "titleLine2": "インターフェースに",
+    "titleLine3": "変える",
+    "role": "プロダクトデザイナー & フロントエンドデベロッパー",
+    "description": "ブランドの手ざわりを保ちながら、触れられるインタラクションで、アイデアを実際に動くプロダクトまで届けます。",
+    "available": "新しいプロジェクト受付中"
+  },
+  "cta": {
+    "viewWork": "作品を見る",
+    "contact": "お問い合わせ",
+    "scroll": "スクロール"
+  },
+  "media": {
+    "caption": "3Dオブジェ領域",
+    "hint": "3Dモーション · GIF差し替え可"
+  },
+  "marquee": {
+    "items": [
+      "インタラクションデザイン",
+      "デザインシステム",
+      "WebGL · 3D",
+      "フロントエンド開発",
+      "ブランド体験"
+    ]
+  },
+  "footer": {
+    "based": "韓国・ソウル拠点",
+    "rights": "All rights reserved."
+  },
+  "social": {
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Portfolio projects",
+  "type": "object",
+  "required": ["projects"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "projects": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/project" }
+    }
+  },
+  "definitions": {
+    "localized": {
+      "type": "object",
+      "required": ["ko", "en", "ja"],
+      "additionalProperties": false,
+      "properties": {
+        "ko": { "type": "string", "minLength": 1 },
+        "en": { "type": "string", "minLength": 1 },
+        "ja": { "type": "string", "minLength": 1 }
+      }
+    },
+    "yearMonth": {
+      "type": "string",
+      "pattern": "^\\d{4}-(0[1-9]|1[0-2])$",
+      "description": "YYYY-MM"
+    },
+    "project": {
+      "type": "object",
+      "required": ["id", "title", "date", "tech", "description", "links"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+          "description": "URL 슬러그. 중복 불가."
+        },
+        "title": { "$ref": "#/definitions/localized" },
+        "date": {
+          "$ref": "#/definitions/yearMonth",
+          "description": "정렬 기준이 되는 대표 시점(보통 완료 월)."
+        },
+        "period": {
+          "type": "object",
+          "description": "선택. 카드에 '2025.11 — 2026.03' 형태로 노출.",
+          "required": ["start"],
+          "additionalProperties": false,
+          "properties": {
+            "start": { "$ref": "#/definitions/yearMonth" },
+            "end": {
+              "oneOf": [
+                { "$ref": "#/definitions/yearMonth" },
+                { "type": "null", "description": "진행 중" }
+              ]
+            }
+          }
+        },
+        "role": { "type": "string", "description": "선택. 예: 'Solo Project', 'Design Lead'." },
+        "tech": {
+          "type": "array",
+          "description": "사용 언어·기술. 첫 3개가 카드에 노출됩니다.",
+          "minItems": 1,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "description": {
+          "$ref": "#/definitions/localized",
+          "description": "1~2문장 권장 (카드에서 2줄 클램프)."
+        },
+        "links": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["label", "url"],
+            "additionalProperties": false,
+            "properties": {
+              "label": { "type": "string", "minLength": 1 },
+              "url": { "type": "string", "format": "uri" }
+            }
+          }
+        },
+        "thumbnail": { "type": "string", "description": "public/ 기준 경로." },
+        "featured": { "type": "boolean", "default": false }
+      }
+    }
+  }
+}

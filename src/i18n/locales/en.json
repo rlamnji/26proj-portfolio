@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "label": "English",
+    "short": "EN"
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Select language"
+  },
+  "loader": {
+    "greeting": "Hello",
+    "status": "Loading portfolio"
+  },
+  "hero": {
+    "eyebrow": "Portfolio · 2026",
+    "titleLine1": "Turning",
+    "titleLine2": "ideas into",
+    "titleLine3": "interfaces",
+    "role": "Product Designer & Front-end Developer",
+    "description": "I carry ideas all the way to shipped products — keeping the brand's texture intact while making every interaction feel tangible.",
+    "available": "Available for new projects"
+  },
+  "cta": {
+    "viewWork": "View work",
+    "contact": "Get in touch",
+    "scroll": "Scroll"
+  },
+  "media": {
+    "caption": "3D object area",
+    "hint": "3D motion · swappable with GIF"
+  },
+  "marquee": {
+    "items": [
+      "Interaction Design",
+      "Design Systems",
+      "WebGL · 3D",
+      "Front-end Engineering",
+      "Brand Experience"
+    ]
+  },
+  "footer": {
+    "based": "Based in Seoul, Korea",
+    "rights": "All rights reserved."
+  },
+  "social": {
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

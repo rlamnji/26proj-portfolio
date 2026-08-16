@@ -1,0 +1,48 @@
+{
+  "$schema": "./projects.schema.json",
+  "projects": [
+    {
+      "id": "test1",
+      "title": {
+        "ko": "test1",
+        "en": "test1",
+        "ja": "test1"
+      },
+      "date": "2026-03",
+      "period": { "start": "2025-11", "end": "2026-03" },
+      "role": "Design Lead · Front-end",
+      "tech": ["React", "TypeScript", "Tailwind CSS", "Storybook", "Figma"],
+      "description": {
+        "ko": "test1",
+        "en": "test1",
+        "ja": "test1"
+      },
+      "links": [
+        { "label": "Live", "url": "" },
+        { "label": "GitHub", "url": "" }
+      ],
+      "thumbnail": "/projects/test.webp",
+      "featured": true
+    },
+    {
+      "id": "test2",
+      "title": {
+        "ko": "test2",
+        "en": "test2",
+        "ja": "test2"
+      },
+      "date": "2025-08",
+      "period": { "start": "2025-05", "end": "2025-08" },
+      "role": "Solo Project",
+      "tech": ["React", "Three.js", "react-three-fiber", "GLSL"],
+      "description": {
+        "ko": "test2",
+        "en": "test2",
+        "ja": "test2。"
+      },
+      "links": [{ "label": "Live", "url": "test2" }],
+      "thumbnail": "/projects/test2.webp",
+      "featured": true
+    }
+  ]
+}
