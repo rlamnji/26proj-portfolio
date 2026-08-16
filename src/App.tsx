@@ -1,5 +1,4 @@
 import Intro from "./intro/IntroPage";
-import Work from "./work/Work";
 
 function App() {
   return (

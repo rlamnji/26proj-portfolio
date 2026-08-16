@@ -1,12 +1,4 @@
-import { useTranslation } from "react-i18next";
-import { SUPPORTED_LANGUAGES } from "../i18n";
 import { getImagePath } from "../util/assets";
-
-const LANGUAGE_LABELS: Record<string, string> = {
-  ja: "JA",
-  en: "EN",
-  ko: "KO",
-};
 
 const SOCIAL_LINKS = [
   {

@@ -11,14 +11,7 @@
  *  5) Marquee       : 하단 무한 흐름 텍스트
  */
 
-import {
-  Suspense,
-  useEffect,
-  useMemo,
-  useRef,
-  useState,
-  type ReactElement,
-} from "react";
+import { Suspense, useEffect, useState, type ReactElement } from "react";
 import { useTranslation } from "react-i18next";
 import {
   AnimatePresence,
@@ -26,9 +19,8 @@ import {
   useReducedMotion,
   type Variants,
 } from "framer-motion";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 //import { Float, MeshDistortMaterial } from "@react-three/drei";
-import type { Mesh } from "three";
 import Work from "../work/Work";
 import { Footer } from "../component/Footbar";
 
